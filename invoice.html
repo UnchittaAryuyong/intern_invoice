@@ -27,7 +27,7 @@
             <td style="text-align: center; width: 1vh;">
               <img src="https://lh5.googleusercontent.com/d/16dKfWv3EhqkOJ9nKil93LWyp4bCSZjYd" width="200px" alt="Company Logo">
             </td>
-            <td style="font-size: 12px; text-align: center;">
+            <td style="font-size: 10px; text-align: center;">
               บริษัท เฟรช คอมเมิร์ซ จำกัด (สำนักงานใหญ่) <br>
               118/1 อาคารทิปโก้ ทาวเวอร์ 2 ชั้นที่ 17 ถนนพระราม 6 <br>
               แขวงพญาไท เขตพญาไท กรุงเทพมหานคร 10400 <br>
@@ -52,7 +52,7 @@
           </thead>
             <tbody>
               <tr>
-                <td class="no-border-right">Customer ID <br>
+                <td class="no-border-right"><b>Customer ID <br>
                   ร้าน <br>
                   นามบริษัท <br>
                   สาขาที่ <br>
@@ -62,7 +62,7 @@
                   E-mail <br>
                   เลขประจำตัวผู้เสียภาษี <br>
                   ชื่อผู้ติดต่อ <br>
-                  โทรศัพท์ <br>
+                  โทรศัพท์ </b><br>
                 </td>
                 <td id="Quotation-info" class="no-border-left"></td>
                 <td style="vertical-align: top;">
@@ -70,7 +70,7 @@
                   <div id="note"></div>
                   <div id="bid-period"></div>
                   <div id="payment-term"></div><br>
-                  <div class="checkbox-container" id="payment-checkbox">
+                  <div class="checkbox-container" id="payment-checkbox" style="color: blue;">
                     <label class="checkbox-label">
                       <input type="checkbox" name="payment" value="ชำระผ่านการโอนเงินเข้าบัญชีธนาคารบริษัท"> ชำระผ่านการโอนเงินเข้าบัญชีธนาคารบริษัท
                     </label><br>
@@ -93,7 +93,7 @@
               <tr class="title-bill">
                 <th>ลำดับ </th>
                 <th>รหัส</th>
-                <th style="width: 200px;">รายการ </th>
+                <th style="width: 150px;">รายการ </th>
                 <th>Vat <br> Item </th>
                 <th>จำนวน</th>
                 <th>หน่วย </th>
@@ -115,60 +115,61 @@
           </table>
         </div>
 
-        <div class="calculate-invoice">
+        <div class="calculate-invoice" style="font-size: 10px;">
           <table style="width:100%">
-            <td class="line-calculate no-border-left" style="width: 8%;">รวมเงิน</td>
-            <td class="no-border-right no-border-left">ค่าสินค้าก่อนหักส่วนลด</td>
+            <tr>
+            <td class="line-calculate no-border-left" style="width: 8%;"><b>รวมเงิน</b></td>
+            <td class="no-border-right no-border-left"><b>ค่าสินค้าก่อนหักส่วนลด</b></td>
             <td class="no-border-left text-end" id="value1"></td>
             </tr>
             <tr>
               <td class="line-calculate no-border-left"></td>
-              <td class="no-border-right no-border-left">ค่าขนส่ง</td>
+              <td class="no-border-right no-border-left"><b>ค่าขนส่ง</b></td>
               <td class="no-border-left text-end" id="value2"></td>
             </tr>
             <tr>
               <td class="line-calculate no-border-left"></td>
-              <td class="no-border-right no-border-left">ราคารวมค่าสินค้าและค่าขนส่ง</td>
+              <td class="no-border-right no-border-left"><b>ราคารวมค่าสินค้าและค่าขนส่ง</b></td>
               <td class="no-border-left text-end" id="value3"></td>
             </tr>
             <tr>
               <td class="line-calculate no-border-left"></td>
-              <td class="no-border-right no-border-left">ส่วนลดค่าสินค้า</td>
+              <td class="no-border-right no-border-left" style="color: red;"><b>ส่วนลดค่าสินค้า</b></td>
               <td class="no-border-left text-end" id="value4"></td>
             </tr>
             <tr>
               <td class="line-calculate no-border-left"></td>
-              <td class="no-border-right no-border-left">ส่วนลดค่าขนส่ง</td>
+              <td class="no-border-right no-border-left" style="color: red;"><b>ส่วนลดค่าขนส่ง</b></td>
               <td class="no-border-left text-end" id="value5"></td>
             </tr>
             <tr>
               <td class="line-calculate no-border-left"></td>
-              <td class="no-border-right no-border-left">รวมส่วนลด</td>
+              <td class="no-border-right no-border-left"><b>รวมส่วนลด</b></td>
               <td class="no-border-left text-end" id="value6"></td>
             </tr>
             <tr>
               <td class="line-calculate no-border-left"></td>
-              <td class="no-border-right no-border-left">ค่าสินค้าหลังหักส่วนลด</td>
+              <td class="no-border-right no-border-left"><b>ค่าสินค้าหลังหักส่วนลด</b></td>
               <td class="no-border-left text-end" id="value7"></td>
             </tr>
             <tr>
               <td class="line-calculate no-border-left"></td>
-              <td class="no-border-right no-border-left">ค่าส่งหลังหักส่วนลด</td>
+              <td class="no-border-right no-border-left"><b>ค่าส่งหลังหักส่วนลด</b></td>
               <td class="no-border-left text-end" id="value8"></td>
             </tr>
             <tr>
               <td class="line-calculate no-border-left"></td>
-              <td class="no-border-right no-border-left">รวมเงินหักหลังส่วนลดก่อนภาษีมูลค่าเพิ่ม</td>
+              <td class="no-border-right no-border-left"><b>รวมเงินหักหลังส่วนลดก่อนภาษีมูลค่าเพิ่ม</b></td>
               <td class="no-border-left text-end" id="value9"></td>
             </tr>
             <tr>
               <td class="line-calculate no-border-left"></td>
-              <td class="no-border-right no-border-left">ภาษีมูลค่าเพิ่ม 7%</td>
+              <td class="no-border-right no-border-left"><b>ภาษีมูลค่าเพิ่ม 7%</b></td>
               <td class="no-border-left text-end" id="value10"></td>
             </tr>
             <tr>
               <td class="line-calculate no-border-left"></td>
-              <td class="no-border-right no-border-left">ค่าสินค้าและค่าส่งหลังภาษีมูลค่าเพิ่ม</td>
+              <td class="no-border-right no-border-left"><b>ค่าสินค้าและค่าส่งหลังภาษีมูลค่าเพิ่ม</b></td>
               <td class="no-border-left text-end" id="value11"></td>
             </tr>
           </table>
